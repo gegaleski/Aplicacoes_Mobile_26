@@ -172,7 +172,10 @@ class _TelaAppState extends State<TelaApp> {
                 SizedBox(
                   height: 8,
                 ),
-                Expanded(
+                
+              ],
+            ),
+            Expanded(
                     child: _nomes.isEmpty
                         ? Center(
                             child: Text('Sem nomes salvos'),
@@ -214,8 +217,6 @@ class _TelaAppState extends State<TelaApp> {
                   alignment: Alignment.centerRight,
                   child: Text('Total ${_nomes.length}'),
                 )
-              ],
-            )
           ],
         ),
       ),
